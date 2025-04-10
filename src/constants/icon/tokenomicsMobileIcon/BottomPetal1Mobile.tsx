@@ -1,5 +1,3 @@
-import React from 'react';
-
 const BottomPetal1Mobile = () => {
     return (
         <svg
