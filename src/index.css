@@ -1,0 +1,268 @@
+@import 'tailwindcss';
+
+@plugin 'tailwind-scrollbar' {
+    nocompatible: true;
+    preferredstrategy: 'pseudoelements';
+}
+
+@font-face {
+    font-family: 'euclid_regular';
+    src: url('/fonts/Euclid_Circular_A_Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'euclid_light';
+    src: url('/fonts/Euclid_Circular_A_Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'euclid_medium';
+    src: url('/fonts/Euclid_Circular_A_Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'euclid_semibold';
+    src: ('/fonts/Euclid_Circular_A_SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'euclid_bold';
+    src: url('/fonts/Euclid_Circular_A_Bold.ttf');
+    font-weight: 700;
+}
+
+:root {
+    --background: #0c0b1e;
+    --foreground: #ffffff;
+    --primary_font: 'euclid_regular';
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+    --breakpoint-xs: 20rem;
+    --breakpoint-s: 23.438rem;
+    --breakpoint-m: 30rem;
+    --breakpoint-sm: 40rem;
+    --breakpoint-md: 48rem;
+    --breakpoint-mdl: 56.25rem;
+    --breakpoint-l: 62rem;
+    --breakpoint-lg: 64rem;
+    --breakpoint-xlg: 70rem;
+    --breakpoint-xl: 80rem;
+    --breakpoint-xll: 83rem;
+    --breakpoint-1xl: 90rem;
+    --breakpoint-2xl: 96rem;
+
+    --font-euclid_regular: 'euclid_regular';
+    --font-euclid_light: 'euclid_light';
+    --font-euclid_medium: 'euclid_medium';
+    --font-euclid_semibold: 'euclid_semibold';
+    --font-euclid_bold: 'euclid_bold';
+
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-grayvariant: #909090;
+    --color-whitevariant8: #ffffff14;
+    --color-whitevariant16: #ffffff29;
+    --color-whiteneutral: #d9dbe9;
+    --color-whitevariant48: #ffffff7a;
+    --color-whitevariant50: #ffffff80;
+    --color-whitevariant60: #ffffff99;
+    --color-whitevariant70: #ffffffb2;
+    --color-whitevariant80: #ffffffcc;
+    --color-purplevariant: #876cf5;
+    --color-purplevariant1: #9772fc;
+    --color-purplevariant60: #6f4cffa3;
+}
+
+@layer base {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    html {
+        background: var(--background);
+        color: var(--foreground);
+        font-family: var(--primary_font);
+        scroll-behavior: smooth;
+    }
+
+    .articleInsightsCard {
+        background: linear-gradient(
+            135deg,
+            rgba(202, 141, 255, 0.02) -3%,
+            rgba(108, 52, 161, 0.02) 128.5%
+        );
+        box-shadow:
+            0px 1px 1px 0px rgba(216, 236, 248, 0.2) inset,
+            0px 24px 48px 0px rgba(168, 216, 245, 0.06) inset;
+        backdrop-filter: blur(35.25px);
+    }
+
+    .articleInsightsCardImage {
+        background: linear-gradient(
+            45deg,
+            #000000 0%,
+            #7023c3 50%,
+            #ffceb0 100%
+        );
+    }
+
+    .textGradient {
+        background: linear-gradient(
+            180deg,
+            #fff 0%,
+            rgba(255, 255, 255, 0.4) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .borderGradient {
+        background: linear-gradient(
+            45deg,
+            #000000 0%,
+            #7023c3 50%,
+            #ffceb0 100%
+        );
+        box-shadow:
+            0px 1px 1px 0px rgba(216, 236, 248, 0.2) inset,
+            0px 24px 48px 0px rgba(168, 216, 245, 0.06) inset;
+        backdrop-filter: blur(35.25px);
+    }
+
+    .videoLinearGradient {
+        background: linear-gradient(
+            208deg,
+            #ffceb0 -1.07%,
+            rgba(112, 35, 195, 0.5) 27.87%,
+            rgba(0, 0, 0, 0) 93.99%
+        );
+        box-shadow: 0px 2px 12px 0px rgba(20, 20, 43, 0.08);
+    }
+
+    .whyusCardBackground {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(12px);
+    }
+
+    .powerOnchainLinearGradient {
+        background: linear-gradient(
+            245deg,
+            #d9a585 -7.96%,
+            #57169d 46.02%,
+            #000 100%
+        );
+    }
+
+    .stepLinearGradient {
+        background: linear-gradient(
+            151deg,
+            rgba(88, 42, 215, 0.2) 7.99%,
+            rgba(122, 88, 238, 0.2) 96%
+        );
+    }
+
+    .onChainWorkLinearGradient {
+        background: linear-gradient(
+            210deg,
+            #ffceb0 0%,
+            rgba(112, 35, 195, 0.5) 50%,
+            rgba(0, 0, 0, 0) 100%
+        );
+        box-shadow: 0px 49px 85.1px 0px #260e43;
+    }
+
+    .roadmapLinearGradient {
+        background: linear-gradient(
+            242deg,
+            #ffceb0 1.33%,
+            rgba(112, 35, 195, 0.5) 50.67%,
+            rgba(0, 0, 0, 0) 100%
+        );
+        box-shadow:
+            0px 1px 1px 0px rgba(216, 236, 248, 0.2) inset,
+            0px 24px 48px 0px rgba(168, 216, 245, 0.06) inset;
+    }
+
+    .roadmapSecondLinearGradient {
+        backdrop-filter: blur(35.25px);
+    }
+
+    .loadingScreen {
+        will-change: auto;
+    }
+    .loadinggradient {
+        background: linear-gradient(210deg, #f4b0ff 0%, #8833e4 100%);
+    }
+
+    .primaryButton {
+        transition: all 0.3s ease-in-out;
+        will-change: auto;
+    }
+    .primaryButton:hover {
+        transform: scaleY(1.1);
+        transition: all 0.3s ease-in-out;
+    }
+    .primaryButton:active {
+        transform: scale(0.9);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .scrollbar-fancy {
+        overflow-y: scroll;
+        scrollbar-width: thin; /* Firefox */
+        scrollbar-color: #7023c3 #0c0b1e;
+    }
+
+    /* WebKit Scrollbar Styles */
+    .scrollbar-fancy::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        background: transparent;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+    }
+
+    .scrollbar-fancy:hover::-webkit-scrollbar {
+        opacity: 1;
+    }
+
+    /* Track */
+    .scrollbar-fancy::-webkit-scrollbar-track {
+        background: #0c0b1e;
+        border-radius: 10px;
+    }
+
+    /* Thumb with your custom vertical gradient */
+    .scrollbar-fancy::-webkit-scrollbar-thumb {
+        background: linear-gradient(
+            180deg,
+            #000000 0%,
+            #7023c3 50%,
+            #ffceb0 100%
+        );
+        border-radius: 10px;
+        transition: background 0.3s ease;
+    }
+
+    /* Hover gradient pop (optional) */
+    .scrollbar-fancy::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(
+            180deg,
+            #000000 0%,
+            #8f39ec 50%,
+            #ffd9c3 100%
+        );
+    }
+
+    .click {
+        @apply cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 active:scale-95;
+    }
+}

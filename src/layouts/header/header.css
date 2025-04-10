@@ -1,0 +1,11 @@
+.navMobileMenuActive .menubar:nth-child(2) {
+    opacity: 0 !important;
+}
+
+.navMobileMenuActive .menubar:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg) !important;
+}
+
+.navMobileMenuActive .menubar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
