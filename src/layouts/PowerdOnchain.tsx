@@ -41,7 +41,7 @@ const PowerdOnchain = () => {
                         scrollTrigger: {
                             trigger: '#powerdOnchain',
                             start: 'top top',
-                            end: '+=1200',
+                            end: '+=1500',
                             pin: true,
                             // markers: true,
                             scrub: 2,
@@ -51,73 +51,73 @@ const PowerdOnchain = () => {
                     tl.fromTo(
                         '.imagepowere1',
                         { opacity: 1, scale: 1 },
-                        { opacity: 0, duration: 1, scale: 0 },
-                        '+=2',
+                        { opacity: 0, duration: 3, scale: 0 },
+                        '+=3',
                     )
                         .fromTo(
                             '.imagepowere2',
                             { opacity: 0, scale: 0 },
-                            { opacity: 1, duration: 1, scale: 1 },
+                            { opacity: 1, duration: 3, scale: 1 },
                             '<',
                         )
                         .fromTo(
                             '.leftPowered1',
                             { yPercent: 0, zIndex: 5 },
-                            { yPercent: -150, duration: 1, zIndex: 5 },
+                            { yPercent: -150, duration: 3, zIndex: 5 },
                             '<',
                         )
                         .fromTo(
                             '.imagepowere3',
                             { opacity: 0, scale: 0 },
-                            { opacity: 1, duration: 1, scale: 1 },
+                            { opacity: 1, duration: 3, scale: 1 },
                             '+=2',
                         )
                         .fromTo(
                             '.imagepowere2',
                             { opacity: 1, scale: 1 },
-                            { opacity: 0, duration: 1, scale: 0 },
+                            { opacity: 0, duration: 3, scale: 0 },
                             '<',
                         )
                         .fromTo(
                             '.leftPowered2',
                             { yPercent: 0, zIndex: 4 },
-                            { yPercent: -150, duration: 1, zIndex: 4 },
+                            { yPercent: -150, duration: 3, zIndex: 4 },
                             '<',
                         )
                         .fromTo(
                             '.imagepowere4',
                             { opacity: 0, scale: 0 },
-                            { opacity: 1, duration: 1, scale: 1 },
-                            '+=2',
+                            { opacity: 1, duration: 3, scale: 1 },
+                            '+=3',
                         )
                         .fromTo(
                             '.imagepowere3',
                             { opacity: 1, scale: 1 },
-                            { opacity: 0, duration: 1, scale: 0 },
+                            { opacity: 0, duration: 3, scale: 0 },
                             '<',
                         )
                         .fromTo(
                             '.leftPowered3',
                             { yPercent: 0, zIndex: 3 },
-                            { yPercent: -150, duration: 1, zIndex: 3 },
+                            { yPercent: -150, duration: 3, zIndex: 3 },
                             '<',
                         )
                         .fromTo(
                             '.imagepowere5',
                             { opacity: 0, scale: 0 },
-                            { opacity: 1, duration: 1, scale: 1 },
-                            '+=2',
+                            { opacity: 1, duration: 3, scale: 1 },
+                            '+=3',
                         )
                         .fromTo(
                             '.imagepowere4',
                             { opacity: 1, scale: 1 },
-                            { opacity: 0, duration: 1, scale: 0 },
+                            { opacity: 0, duration: 3, scale: 0 },
                             '<',
                         )
                         .fromTo(
                             '.leftPowered4',
                             { yPercent: 0, zIndex: 2 },
-                            { yPercent: -150, duration: 1, zIndex: 2 },
+                            { yPercent: -150, duration: 3, zIndex: 2 },
                             '<',
                         );
                 }
@@ -127,7 +127,7 @@ const PowerdOnchain = () => {
                         scrollTrigger: {
                             trigger: '#powerdOnchain',
                             start: 'top top',
-                            end: '+=2000',
+                            end: '+=2500',
                             pin: true,
                             // markers: true,
                             scrub: 2,
@@ -138,19 +138,19 @@ const PowerdOnchain = () => {
                     tl.fromTo(
                         '.imagepowere1',
                         { opacity: 1, scale: 1 },
-                        { opacity: 0, duration: 1, scale: 0 },
+                        { opacity: 0, duration: 3, scale: 0 },
                         '+=2',
                     )
                         .fromTo(
                             '.imagepowere2',
                             { opacity: 0, scale: 0 },
-                            { opacity: 1, duration: 1, scale: 1 },
+                            { opacity: 1, duration: 3, scale: 1 },
                             '<',
                         )
                         .fromTo(
                             '.leftPoweredOption',
                             { marginTop: '300px' },
-                            { duration: 1, marginTop: '100px' },
+                            { duration: 3, marginTop: '100px' },
                             '<',
                         )
                         .fromTo(
@@ -162,7 +162,7 @@ const PowerdOnchain = () => {
                             {
                                 background:
                                     'linear-gradient(245deg, rgba(255,255,255,0.08) -7.96%, rgba(255,255,255,0.08) 46.02%, rgba(255,255,255,0.08) 100%)',
-                                duration: 0,
+                                duration: 3,
                             },
                             '<',
                         )
@@ -175,26 +175,26 @@ const PowerdOnchain = () => {
                             {
                                 background:
                                     'linear-gradient(245deg, #d9a585 -7.96%,#57169d 46.02%,#000 100%)',
-                                duration: 0,
+                                duration: 3,
                             },
                             '<',
                         )
                         .fromTo(
                             '.imagepowere3',
                             { opacity: 0, scale: 0 },
-                            { opacity: 1, duration: 1, scale: 1 },
+                            { opacity: 1, duration: 3, scale: 1 },
                             '+=2',
                         )
                         .fromTo(
                             '.imagepowere2',
                             { opacity: 1, scale: 1 },
-                            { opacity: 0, duration: 1, scale: 0 },
+                            { opacity: 0, duration: 3, scale: 0 },
                             '<',
                         )
                         .fromTo(
                             '.leftPoweredOption',
                             { marginTop: '100px' },
-                            { duration: 1, marginTop: '-50px' },
+                            { duration: 3, marginTop: '-50px' },
                             '<',
                         )
                         .fromTo(
@@ -206,7 +206,7 @@ const PowerdOnchain = () => {
                             {
                                 background:
                                     'linear-gradient(245deg, rgba(255,255,255,0.08) -7.96%, rgba(255,255,255,0.08) 46.02%, rgba(255,255,255,0.08) 100%)',
-                                duration: 0,
+                                duration: 3,
                             },
                             '<',
                         )
@@ -219,26 +219,26 @@ const PowerdOnchain = () => {
                             {
                                 background:
                                     'linear-gradient(245deg, #d9a585 -7.96%,#57169d 46.02%,#000 100%)',
-                                duration: 0,
+                                duration: 3,
                             },
                             '<',
                         )
                         .fromTo(
                             '.imagepowere4',
                             { opacity: 0, scale: 0 },
-                            { opacity: 1, duration: 1, scale: 1 },
+                            { opacity: 1, duration: 3, scale: 1 },
                             '+=2',
                         )
                         .fromTo(
                             '.imagepowere3',
                             { opacity: 1, scale: 1 },
-                            { opacity: 0, duration: 1, scale: 0 },
+                            { opacity: 0, duration: 3, scale: 0 },
                             '<',
                         )
                         .fromTo(
                             '.leftPoweredOption',
                             { marginTop: '-50px' },
-                            { duration: 1, marginTop: '-200px' },
+                            { duration: 3, marginTop: '-200px' },
                             '<',
                         )
                         .fromTo(
@@ -250,7 +250,7 @@ const PowerdOnchain = () => {
                             {
                                 background:
                                     'linear-gradient(245deg, rgba(255,255,255,0.08) -7.96%, rgba(255,255,255,0.08) 46.02%, rgba(255,255,255,0.08) 100%)',
-                                duration: 0,
+                                duration: 3,
                             },
                             '<',
                         )
@@ -263,26 +263,26 @@ const PowerdOnchain = () => {
                             {
                                 background:
                                     'linear-gradient(245deg, #d9a585 -7.96%,#57169d 46.02%,#000 100%)',
-                                duration: 0,
+                                duration: 3,
                             },
                             '<',
                         )
                         .fromTo(
                             '.imagepowere5',
                             { opacity: 0, scale: 0 },
-                            { opacity: 1, duration: 1, scale: 1 },
+                            { opacity: 1, duration: 3, scale: 1 },
                             '+=2',
                         )
                         .fromTo(
                             '.imagepowere4',
                             { opacity: 1, scale: 1 },
-                            { opacity: 0, duration: 1, scale: 0 },
+                            { opacity: 0, duration: 3, scale: 0 },
                             '<',
                         )
                         .fromTo(
                             '.leftPoweredOption',
                             { marginTop: '-200px' },
-                            { duration: 1, marginTop: '-350px' },
+                            { duration: 3, marginTop: '-350px' },
                             '<',
                         )
                         .fromTo(
@@ -294,7 +294,7 @@ const PowerdOnchain = () => {
                             {
                                 background:
                                     'linear-gradient(245deg, rgba(255,255,255,0.08) -7.96%, rgba(255,255,255,0.08) 46.02%, rgba(255,255,255,0.08) 100%)',
-                                duration: 0,
+                                duration: 3,
                             },
                             '<',
                         )
@@ -307,7 +307,7 @@ const PowerdOnchain = () => {
                             {
                                 background:
                                     'linear-gradient(245deg, #d9a585 -7.96%,#57169d 46.02%,#000 100%)',
-                                duration: 0,
+                                duration: 3,
                             },
                             '<',
                         );
@@ -323,7 +323,7 @@ const PowerdOnchain = () => {
                 id="powerdOnchain"
                 className="m:px-5 mx-auto min-h-dvh w-full max-w-[78.75rem] px-4  pb-[5rem] md:px-4 md:pb-[7.5rem] xl:px-0"
             >
-                <div className="pt-4"></div>
+                <div className="pt-12 md:pt-8"></div>
                 <SectionHeadng title="Built for Every Vision." />
                 <SectionHeadng
                     title="Powered by"
@@ -335,7 +335,7 @@ const PowerdOnchain = () => {
                     }
                 />
 
-                <div className="l:gap-[3.75rem] l:flex-row l:max-h-[600px] mt-8 flex flex-col justify-between gap-8 overflow-hidden">
+                <div className="l:gap-[3.75rem] l:flex-row l:max-h-[600px] mt-8 flex flex-col justify-between overflow-hidden md:gap-8">
                     <div className="relative flex h-fit flex-1 items-center justify-center">
                         <div className="relative -z-10">
                             <img
@@ -410,7 +410,7 @@ const PowerdOnchain = () => {
                             </div>
                         </div>
 
-                        <div className="leftPowered2  l:static absolute flex min-h-[6.25rem] w-full gap-3 rounded-xl p-3 md:gap-4 md:px-4 md:py-6">
+                        <div className="leftPowered2  l:static absolute flex w-full gap-3 rounded-xl p-3 md:gap-4 md:px-4 md:py-6">
                             <div className="h-[2rem] w-[2rem] md:h-[2.5rem] md:w-[2.5rem]">
                                 <NFTGaming />
                             </div>

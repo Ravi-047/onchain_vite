@@ -265,14 +265,14 @@ const Tokenomics = () => {
 
                     <div className="tokenomics">
                         <div className=" xlg:min-h-[46rem]  xlg:pt-20 relative  flex min-h-[25rem] items-center justify-center">
-                            <div className="absolute inset-0 top-[60%] left-1/2 -z-[99] flex -translate-x-1/2 -translate-y-1/2 items-center justify-center">
+                            <div className="absolute -z-[99] flex h-full w-full items-center justify-center md:top-[60%] md:left-[60%] md:-translate-x-1/2 md:-translate-y-1/2">
                                 <img
                                     src={tokenomicsBackgroundImage}
                                     alt="tokneomics image"
                                     width={0}
                                     height={0}
                                     sizes="100vw"
-                                    className="h-[100rem] w-[100rem]"
+                                    className="h-[50rem] w-[135.625rem] object-center md:h-[100rem] md:object-contain"
                                 />
                             </div>
                             <div className=" relative z-40 flex w-fit flex-col items-center justify-center">

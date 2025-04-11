@@ -10,6 +10,7 @@ import Roadmap3Rive from '../components/rive/Roadmap3Rive';
 import Roadmap4Rive from '../components/rive/Roadmap4Rive';
 import PrimaryButton from '../components/buttons/PrimaryButton';
 import RoadmapWhitepaperIconSVG from '../constants/icon/RoadmapWhitepaperIconSVG';
+import roadmapBackgroundGrid from '/assets/roadmapBackgrondGrid.png';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -34,12 +35,12 @@ const Roadmap = () => {
                         '.roadmapCard',
                         {
                             xPercent: 17,
-                            duration: 1.5,
+                            duration: 3,
                             ease: 'power1.out',
                         },
                         {
                             xPercent: 17,
-                            duration: 1.5,
+                            duration: 3,
                             ease: 'power1.out',
                         },
                     )
@@ -47,56 +48,58 @@ const Roadmap = () => {
                             '.roadmapCard',
                             {
                                 xPercent: 17,
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 xPercent: -12,
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
-                            '+=2',
+                            '+=4',
                         )
                         .fromTo(
                             '.roadmapProgressBar',
                             {
                                 width: '90%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 width: '0%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard1, .roadmapCard3',
+                            '.roadmapCard1, .roadmapCard3, .roadmapbacgroundCard1, .roadmapbacgroundCard3',
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard2',
+                            '.roadmapCard2, .roadmapbacgroundCard2',
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
 
@@ -106,56 +109,57 @@ const Roadmap = () => {
                             '.roadmapCard',
                             {
                                 xPercent: -11,
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 xPercent: -40,
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
-                            '+=2',
+                            '+=4',
                         )
                         .fromTo(
                             '.roadmapProgressBar2',
                             {
                                 width: '90%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 width: '0%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard2',
+                            '.roadmapCard2, .roadmapbacgroundCard2',
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard3',
+                            '.roadmapCard3, .roadmapbacgroundCard3',
                             {
                                 background: '#909090',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
 
@@ -165,56 +169,58 @@ const Roadmap = () => {
                             '.roadmapCard',
                             {
                                 xPercent: -40,
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 xPercent: -68,
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
-                            '+=2',
+                            '+=4',
                         )
                         .fromTo(
                             '.roadmapProgressBar3',
                             {
                                 width: '90%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 width: '0%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard3',
+                            '.roadmapCard3, .roadmapbacgroundCard3',
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard4',
+                            '.roadmapCard4, .roadmapbacgroundCard4',
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
 
@@ -223,21 +229,21 @@ const Roadmap = () => {
                         .fromTo(
                             '.roadmapCard',
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
-                            '+=2',
+                            '+=4',
                         );
 
                     ScrollTrigger.create({
                         animation: tl,
                         trigger: '.roadmap',
                         start: 'top 15%',
-                        end: '+=2200',
+                        end: '+=5000',
                         scrub: 2,
                         pin: true,
                         anticipatePin: 1,
@@ -251,12 +257,12 @@ const Roadmap = () => {
                         '.roadmapCard',
                         {
                             xPercent: 8,
-                            duration: 1.5,
+                            duration: 3,
                             ease: 'power1.out',
                         },
                         {
                             xPercent: 8,
-                            duration: 1.5,
+                            duration: 3,
                             ease: 'power1.out',
                         },
                         '+=2',
@@ -266,12 +272,12 @@ const Roadmap = () => {
                             '.roadmapCard',
                             {
                                 xPercent: 8,
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             {
                                 xPercent: -22,
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                         )
@@ -279,42 +285,44 @@ const Roadmap = () => {
                             '.roadmapProgressBar',
                             {
                                 width: '90%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 width: '0%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard1, .roadmapCard3',
+                            '.roadmapCard1, .roadmapCard3, .roadmapbacgroundCard1, .roadmapbacgroundCard3',
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard2',
+                            '.roadmapCard2, .roadmapbacgroundCard2',
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
 
@@ -323,11 +331,11 @@ const Roadmap = () => {
                         .fromTo(
                             '.roadmapCard',
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             '+=2',
@@ -336,12 +344,12 @@ const Roadmap = () => {
                             '.roadmapCard',
                             {
                                 xPercent: -22,
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             {
                                 xPercent: -50,
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                         )
@@ -349,42 +357,44 @@ const Roadmap = () => {
                             '.roadmapProgressBar2',
                             {
                                 width: '90%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 width: '0%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard2',
+                            '.roadmapCard2, .roadmapbacgroundCard2',
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard3',
+                            '.roadmapCard3, .roadmapbacgroundCard3',
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
 
@@ -394,12 +404,12 @@ const Roadmap = () => {
                             '.roadmapCard',
                             {
                                 xPercent: -50,
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 xPercent: -78,
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '+=2',
@@ -408,42 +418,44 @@ const Roadmap = () => {
                             '.roadmapProgressBar3',
                             {
                                 width: '90%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 width: '0%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard3',
+                            '.roadmapCard3, .roadmapbacgroundCard3',
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard4',
+                            '.roadmapCard4, .roadmapbacgroundCard4',
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
 
@@ -452,11 +464,11 @@ const Roadmap = () => {
                         .fromTo(
                             '.roadmapCard',
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             '+=2',
@@ -465,7 +477,7 @@ const Roadmap = () => {
                         animation: tl,
                         trigger: '.roadmap',
                         start: 'top 15%',
-                        end: '+=1000',
+                        end: '+=4000',
                         scrub: true,
                         pin: true,
                         // markers: true,
@@ -478,12 +490,12 @@ const Roadmap = () => {
                         '.roadmapCard',
                         {
                             xPercent: 0,
-                            duration: 1.5,
+                            duration: 3,
                             ease: 'power1.out',
                         },
                         {
                             xPercent: 0,
-                            duration: 1.5,
+                            duration: 3,
                             ease: 'power1.out',
                         },
                         '+=2',
@@ -493,12 +505,12 @@ const Roadmap = () => {
                             '.roadmapCard',
                             {
                                 xPercent: 0,
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             {
                                 xPercent: -26,
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                         )
@@ -506,42 +518,44 @@ const Roadmap = () => {
                             '.roadmapProgressBar',
                             {
                                 width: '90%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 width: '0%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard1, .roadmapCard3',
+                            '.roadmapCard1, .roadmapCard3, .roadmapbacgroundCard1, .roadmapbacgroundCard3',
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard2',
+                            '.roadmapCard2, .roadmapbacgroundCard2',
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
 
@@ -550,11 +564,11 @@ const Roadmap = () => {
                         .fromTo(
                             '.roadmapCard',
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             '+=2',
@@ -563,12 +577,12 @@ const Roadmap = () => {
                             '.roadmapCard',
                             {
                                 xPercent: -26,
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             {
                                 xPercent: -52,
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                         )
@@ -576,42 +590,44 @@ const Roadmap = () => {
                             '.roadmapProgressBar2',
                             {
                                 width: '90%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 width: '0%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard2',
+                            '.roadmapCard2, .roadmapbacgroundCard2',
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard3',
+                            '.roadmapCard3, .roadmapbacgroundCard3',
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
 
@@ -621,12 +637,12 @@ const Roadmap = () => {
                             '.roadmapCard',
                             {
                                 xPercent: -52,
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 xPercent: -77,
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '+=2',
@@ -635,42 +651,44 @@ const Roadmap = () => {
                             '.roadmapProgressBar3',
                             {
                                 width: '90%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 width: '0%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard3',
+                            '.roadmapCard3, .roadmapbacgroundCard3',
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard4',
+                            '.roadmapCard4, .roadmapbacgroundCard4',
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
 
@@ -679,11 +697,11 @@ const Roadmap = () => {
                         .fromTo(
                             '.roadmapCard',
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             '+=2',
@@ -692,7 +710,7 @@ const Roadmap = () => {
                         animation: tl,
                         trigger: '.roadmap',
                         start: 'top 15%',
-                        end: '+=1000',
+                        end: '+=4000',
                         scrub: true,
                         pin: true,
                         // markers: true,
@@ -704,11 +722,11 @@ const Roadmap = () => {
                     tl.fromTo(
                         '.roadmapCard',
                         {
-                            duration: 1.5,
+                            duration: 3,
                             ease: 'power1.out',
                         },
                         {
-                            duration: 1.5,
+                            duration: 3,
                             ease: 'power1.out',
                         },
                         '+=2',
@@ -718,12 +736,12 @@ const Roadmap = () => {
                             '.roadmapCard',
                             {
                                 xPercent: 0,
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             {
                                 xPercent: -23.5,
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                         )
@@ -731,42 +749,44 @@ const Roadmap = () => {
                             '.roadmapProgressBar',
                             {
                                 width: '90%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 width: '0%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard1, .roadmapCard3',
+                            '.roadmapCard1, .roadmapCard3, .roadmapbacgroundCard1, .roadmapbacgroundCard3',
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard2',
+                            '.roadmapCard2, .roadmapbacgroundCard2',
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
 
@@ -775,11 +795,11 @@ const Roadmap = () => {
                         .fromTo(
                             '.roadmapCard',
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             '+=2',
@@ -788,12 +808,12 @@ const Roadmap = () => {
                             '.roadmapCard',
                             {
                                 xPercent: -23.5,
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             {
                                 xPercent: -47.5,
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                         )
@@ -801,42 +821,44 @@ const Roadmap = () => {
                             '.roadmapProgressBar2',
                             {
                                 width: '90%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 width: '0%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard2',
+                            '.roadmapCard2, .roadmapbacgroundCard2',
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard3',
+                            '.roadmapCard3, .roadmapbacgroundCard3',
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
 
@@ -846,12 +868,12 @@ const Roadmap = () => {
                             '.roadmapCard',
                             {
                                 xPercent: -47.5,
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 xPercent: -72,
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '+=2',
@@ -860,27 +882,28 @@ const Roadmap = () => {
                             '.roadmapProgressBar3',
                             {
                                 width: '90%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
                                 width: '0%',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
                         )
                         .fromTo(
-                            '.roadmapCard3',
+                            '.roadmapCard3, .roadmapbacgroundCard3',
                             {
                                 background:
                                     'linear-gradient(242deg, #ffceb0 1.33%,rgba(112, 35, 195, 0.5) 50.67%, rgba(0, 0, 0, 0) 100%)',
-                                duration: 2.5,
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             {
-                                background: '#909090',
-                                duration: 2.5,
+                                background:
+                                    'linear-gradient(242deg, #b0b0b0 0%, #909090 50%, #707070 100%)',
+                                duration: 6,
                                 ease: 'power1.out',
                             },
                             '<',
@@ -888,11 +911,11 @@ const Roadmap = () => {
                         .fromTo(
                             '.roadmapCard',
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             {
-                                duration: 1.5,
+                                duration: 3,
                                 ease: 'power1.out',
                             },
                             '+=2',
@@ -901,7 +924,7 @@ const Roadmap = () => {
                         animation: tl,
                         trigger: '.roadmap',
                         start: 'top 15%',
-                        end: '+=1000',
+                        end: '+=4000',
                         scrub: true,
                         pin: true,
                         // markers: true,
@@ -924,7 +947,12 @@ const Roadmap = () => {
                         {/* card 1 */}
                         <div className="roadmapLinearGradient  roadmapCard1  m:max-w-[24.5rem]  m:min-w-[24.5rem] xlg:p-[4px] s:max-w-[21rem] w-full max-w-[18rem] rounded-2xl p-[2px]">
                             <div className="roadmapSecondLinearGradient xlg:p-6 h-full min-h-[30.375rem]  w-full rounded-2xl bg-[#17162c] p-3">
-                                <div className="h-[19.5rem] w-full">
+                                <div className="roadmapbacgroundCard1 relative h-[19.5rem] w-full rounded-[0.625rem]">
+                                    <img
+                                        src={roadmapBackgroundGrid}
+                                        alt="roadmap background"
+                                        className="absolute h-full w-full rounded-[0.625rem]"
+                                    />
                                     <Roadmap1Rive />
                                 </div>
                                 <h3 className="text-whitevariant80 font-euclid_medium mt-4 text-center text-xl leading-normal font-medium md:text-2xl md:leading-[1.4rem]">
@@ -954,7 +982,12 @@ const Roadmap = () => {
                         {/* card 2 */}
                         <div className="bg-grayvariant roadmapCard2 m:max-w-[24.5rem]  m:min-w-[24.5rem] xlg:p-[4px] s:max-w-[21rem] w-full max-w-[18rem] rounded-2xl p-[2px]">
                             <div className="roadmapSecondLinearGradient xlg:p-6 h-full min-h-[30.375rem] w-full rounded-2xl bg-[#17162c] p-3">
-                                <div className="h-[19.5rem] w-full">
+                                <div className="roadmapbacgroundCard2 relative h-[19.5rem] w-full rounded-[0.625rem]">
+                                    <img
+                                        src={roadmapBackgroundGrid}
+                                        alt="roadmap background"
+                                        className="absolute h-full w-full rounded-[0.625rem]"
+                                    />
                                     <Roadmap2Rive />
                                 </div>
                                 <h3 className="text-whitevariant80 font-euclid_medium mt-4 text-center text-xl leading-normal font-medium md:text-2xl md:leading-[1.4rem]">
@@ -984,7 +1017,12 @@ const Roadmap = () => {
                         {/* card 3 */}
                         <div className="bg-grayvariant roadmapCard3 m:max-w-[24.5rem]  m:min-w-[24.5rem] xlg:p-[4px] s:max-w-[21rem] w-full max-w-[18rem] rounded-2xl p-[2px]">
                             <div className="roadmapSecondLinearGradient xlg:p-6 h-full min-h-[30.375rem] w-full rounded-2xl bg-[#17162c] p-3">
-                                <div className="h-[19.5rem] w-full">
+                                <div className="roadmapbacgroundCard3 relative h-[19.5rem] w-full  rounded-[0.625rem]">
+                                    <img
+                                        src={roadmapBackgroundGrid}
+                                        alt="roadmap background"
+                                        className="absolute h-full w-full rounded-[0.625rem]"
+                                    />
                                     <Roadmap3Rive />
                                 </div>
                                 <h3 className="text-whitevariant80 font-euclid_medium mt-4 text-center text-xl leading-normal font-medium md:text-2xl md:leading-[1.4rem]">
@@ -1014,7 +1052,12 @@ const Roadmap = () => {
                         {/* card 4 */}
                         <div className="bg-grayvariant roadmapCard4 m:max-w-[24.5rem]  m:min-w-[24.5rem] xlg:p-[4px] s:max-w-[21rem] w-full max-w-[18rem] rounded-2xl p-[2px]">
                             <div className="roadmapSecondLinearGradient xlg:p-6 h-full min-h-[30.375rem] w-full rounded-2xl bg-[#17162c] p-3">
-                                <div className="h-[19.5rem] w-full">
+                                <div className="roadmapbacgroundCard4 relative h-[19.5rem] w-full rounded-[0.625rem]">
+                                    <img
+                                        src={roadmapBackgroundGrid}
+                                        alt="roadmap background"
+                                        className="absolute h-full w-full rounded-[0.625rem]"
+                                    />
                                     <Roadmap4Rive />
                                 </div>
                                 <h3 className="text-whitevariant80 font-euclid_medium mt-4 text-center text-xl leading-normal font-medium md:text-2xl md:leading-[1.4rem]">

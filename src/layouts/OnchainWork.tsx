@@ -13,6 +13,7 @@ import HowitWork4Rive from '../components/rive/HowitWork4Rive';
 import { cn } from '../lib/tailwindMerge';
 import PrimaryButton from '../components/buttons/PrimaryButton';
 import CircleDiamondSVG from '../constants/icon/CircleDiamondSVG';
+import howitWorksgridBackground from '/assets/howItWorksGrid.png';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -34,7 +35,7 @@ const OnchainWork = () => {
                         scrollTrigger: {
                             trigger: '.onchainWorkContainer',
                             start: 'top top',
-                            end: '+=3350',
+                            end: '+=5800',
                             pin: true,
                             pinSpacing: false,
                             // markers: true,
@@ -53,9 +54,25 @@ const OnchainWork = () => {
                                     setShowButton(false);
                                 }
                             },
+                            toggleActions: 'play none none reverse',
                         },
                     });
-                    console.log('Desktop timeline created:', tl);
+
+                    tl.fromTo(
+                        '.onchainworkbutton',
+                        {
+                            maxWidth: '0rem',
+                            overflow: 'hidden',
+                            padding: '0.9rem 0rem',
+                        },
+                        {
+                            maxWidth: '21rem',
+                            duration: 0.5,
+                            ease: 'power2.inOut',
+                            padding: '0.9rem 1.2rem',
+                            overflow: 'hidden',
+                        },
+                    );
                 }
 
                 if (isMobile) {
@@ -63,7 +80,7 @@ const OnchainWork = () => {
                         scrollTrigger: {
                             trigger: '.onchainWorkContainer',
                             start: 'top top',
-                            end: '+=3950',
+                            end: '+=6750',
                             pin: true,
                             pinSpacing: false,
                             // markers: true,
@@ -84,7 +101,21 @@ const OnchainWork = () => {
                             },
                         },
                     });
-                    console.log('Mobile timeline created:', tl);
+                    tl.fromTo(
+                        '.onchainworkbutton',
+                        {
+                            maxWidth: '0rem',
+                            overflow: 'hidden',
+                            padding: '0.9rem 0rem',
+                        },
+                        {
+                            maxWidth: '21rem',
+                            duration: 0.5,
+                            ease: 'power2.inOut',
+                            padding: '0.9rem 1.2rem',
+                            overflow: 'hidden',
+                        },
+                    );
                 }
             },
         );
@@ -156,18 +187,23 @@ const OnchainWork = () => {
                                     Step-1
                                 </p>
                             </div>
-                            <div className="onChainWorkLinearGradient border-purplevariant h-[21.3125rem] w-full max-w-[35.0625rem] rounded-[0.9375rem] border">
+                            <div className="onChainWorkLinearGradient border-purplevariant relative h-[21.3125rem] w-full max-w-[35.0625rem] rounded-[0.9375rem] border">
+                                <img
+                                    src={howitWorksgridBackground}
+                                    alt="background"
+                                    className="absolute inset-0 -z-10 h-full w-full"
+                                />
                                 <HowitWork1Rive />
                             </div>
                         </div>
                     </div>
 
-                    <div className="h-[60vh]"></div>
+                    <div className="h-[150vh]"></div>
 
                     {/* second card  */}
                     <div
                         id="howitWork2Rive2"
-                        className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between md:gap-16"
+                        className="flex w-fit flex-col gap-6 md:w-full md:flex-row md:items-center md:justify-between md:gap-16"
                     >
                         <div className="w-full max-w-[35.0625rem]">
                             <div className="mb-6 flex items-center gap-3 md:hidden">
@@ -178,7 +214,12 @@ const OnchainWork = () => {
                                     Step-2
                                 </p>
                             </div>
-                            <div className="onChainWorkLinearGradient border-purplevariant h-[21.3125rem] w-full max-w-[35.0625rem] rounded-[0.9375rem] border">
+                            <div className="onChainWorkLinearGradient border-purplevariant relative h-[21.3125rem] w-full max-w-[35.0625rem] rounded-[0.9375rem] border">
+                                <img
+                                    src={howitWorksgridBackground}
+                                    alt="background"
+                                    className="absolute -z-10 h-full w-full"
+                                />
                                 <HowitWork2Rive />
                             </div>
                         </div>
@@ -205,12 +246,12 @@ const OnchainWork = () => {
                         </div>
                     </div>
 
-                    <div className="h-[60vh]"></div>
+                    <div className="h-[150vh]"></div>
 
                     {/* third card  */}
                     <div
                         id="howitWork3Rive3"
-                        className="flex flex-col-reverse gap-6 md:flex-row md:items-center md:justify-between md:gap-16"
+                        className="flex w-fit flex-col-reverse gap-6 md:w-full md:flex-row md:items-center md:justify-between md:gap-16"
                     >
                         <div className="flex w-full max-w-[37.25rem] flex-col gap-3">
                             <div className="hidden items-center gap-3 md:flex">
@@ -242,18 +283,23 @@ const OnchainWork = () => {
                                     Step-3
                                 </p>
                             </div>
-                            <div className="onChainWorkLinearGradient border-purplevariant h-[21.3125rem] w-full max-w-[35.0625rem] rounded-[0.9375rem] border">
+                            <div className="onChainWorkLinearGradient border-purplevariant relative h-[21.3125rem] w-full max-w-[35.0625rem] rounded-[0.9375rem] border">
+                                <img
+                                    src={howitWorksgridBackground}
+                                    alt="background"
+                                    className="absolute -z-10 h-full w-full"
+                                />
                                 <HowitWork3Rive />
                             </div>
                         </div>
                     </div>
 
-                    <div className="h-[60vh]"></div>
+                    <div className="h-[150vh]"></div>
 
                     {/* fourth card  */}
                     <div
                         id="howitWork4Rive4"
-                        className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between md:gap-16"
+                        className="flex w-fit flex-col gap-6 md:w-full md:flex-row md:items-center md:justify-between md:gap-16"
                     >
                         <div className="w-full max-w-[35.0625rem]">
                             <div className="mb-6 flex items-center gap-3 md:hidden">
@@ -264,7 +310,12 @@ const OnchainWork = () => {
                                     Step-4
                                 </p>
                             </div>
-                            <div className="onChainWorkLinearGradient border-purplevariant h-[21.3125rem] w-full max-w-[35.0625rem] rounded-[0.9375rem] border">
+                            <div className="onChainWorkLinearGradient border-purplevariant relative h-[21.3125rem] w-full max-w-[35.0625rem] rounded-[0.9375rem] border">
+                                <img
+                                    src={howitWorksgridBackground}
+                                    alt="background"
+                                    className="absolute -z-10 h-full w-full"
+                                />
                                 <HowitWork4Rive />
                             </div>
                         </div>
@@ -292,7 +343,7 @@ const OnchainWork = () => {
                         </div>
                     </div>
 
-                    <div className="h-[60vh]"></div>
+                    <div className="h-[125vh]"></div>
                 </div>
 
                 <div
@@ -309,6 +360,7 @@ const OnchainWork = () => {
                         iconClassName="-mt-[1px]"
                         containerClassName={`bg-[#4a35af]  border border-purplevariant max-w-[21rem] w-full md:w-auto`}
                         textClassName="text-white"
+                        animationClass="onchainworkbutton"
                     />
                 </div>
             </div>

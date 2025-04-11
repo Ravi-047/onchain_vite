@@ -55,11 +55,14 @@ const HowitWork2Rive = () => {
                     ScrollTrigger.create({
                         trigger: '#howitWork2Rive2',
                         start: 'top 295',
-                        end: '+=500',
-                        scrub: 2,
+                        end: '+=1000',
+                        scrub: 3,
                         pin: true,
                         onUpdate: self => {
-                            const scrollPctValue = self.progress * 100;
+                            const easedProgress = gsap.parseEase('power2.out')(
+                                self.progress,
+                            );
+                            const scrollPctValue = easedProgress * 100;
                             scrollInput.value = scrollPctValue;
                         },
                         anticipatePin: 1,
@@ -71,11 +74,14 @@ const HowitWork2Rive = () => {
                     ScrollTrigger.create({
                         trigger: '#howitWork2Rive2',
                         start: 'top 200',
-                        end: '+=500',
-                        scrub: 2,
+                        end: '+=1000',
+                        scrub: 3,
                         pin: true,
                         onUpdate: self => {
-                            const scrollPctValue = self.progress * 100;
+                            const easedProgress = gsap.parseEase('power2.out')(
+                                self.progress,
+                            );
+                            const scrollPctValue = easedProgress * 100;
                             scrollInput.value = scrollPctValue;
                         },
                         anticipatePin: 1,
